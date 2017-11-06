@@ -50,23 +50,25 @@
             </ul>
         </div>
         <h4>Please take this small survey</h4>
-        <div align="left">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
-            <p></p>
-            <input type="radio" id="yes_email" name="email_list" value="yes_email">
-            <label for="yes_email">Yes, please send me emails</label>
-            <input type="radio" id="no_email" name="email_list" value="no_email">
-            <label for="no_email">No, don't send me any emails.</label>
-            <p>How did you hear about us?</p>
-            <label for="facebook">Facebook</label>
-            <input type="checkbox" id="facebook" name="heard_of" value="facebook">
-            <label for="newspaper">Newspaper</label>
-            <input type="checkbox" id="newspaper" name="heard_of" value="newspaper">
-            <label for="referral">Referral</label>
-            <input type="checkbox" id="referral" name="heard_of" value="referral">
-            <p></p>
-            <input type="submit" value="Submit">
-        </div>
+        <form action="process.php" method="post">
+            <div align="left">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <p></p>
+                <input type="radio" id="yes_email" name="email_list" value="yes_email">
+                <label for="yes_email">Yes, please send me emails</label>
+                <input type="radio" id="no_email" name="email_list" value="no_email">
+                <label for="no_email">No, don't send me any emails.</label>
+                <p>How did you hear about us?</p>
+                <label for="facebook">Facebook</label>
+                <input type="checkbox" id="facebook" name="heard_of" value="facebook">
+                <label for="newspaper">Newspaper</label>
+                <input type="checkbox" id="newspaper" name="heard_of" value="newspaper">
+                <label for="referral">Referral</label>
+                <input type="checkbox" id="referral" name="heard_of" value="referral">
+                <p></p>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </body>
 </html>
